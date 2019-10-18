@@ -1,0 +1,103 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #CCCCCC;
+}
+.head {
+  height: 150px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.head > .label {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+}
+.head > .descr {
+  font-family: 'Oswald', sans-serif;
+}
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 5px 50px;
+}
+.card {
+  background-color: #fff;
+  flex: 1 0 25%;
+  height: 250px;
+  margin: 0 5px 50px;
+  position: relative;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+.card > img {
+  height: 100%;
+}
+.card > .descr {
+  position: absolute;
+    bottom: 45px;
+    height: 40px;
+    background-color: rgba(244, 245, 247, 0.6);
+    padding: 10px;
+    font-size: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.card > .addToCart {
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  background-color: #CCCCCC;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0.1px 0px rgba(0,0,0,0.75);
+  z-index: 1;
+}
+.card > .addToCart > img {
+  height: 20px;
+}
+
+
+.promo {
+  width: 100%;
+  height: 400px;
+  background: url(../../assets/html/promo.jpeg)
+  no-repeat
+  left center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+}
+.promoButtonContainer {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.promoButton {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+}
+.promoButton:hover {
+  background-color: #CCCCCC;
+  color: white;
+}
+
